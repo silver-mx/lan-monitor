@@ -7,10 +7,8 @@ const wol = require('wol');
 export class NetService {
 
     wakeOnLan(wolDto: WolDto) {
-        console.log('wol=', wol);
-
         wol.wake(wolDto.macAddress, (err, res) => {
-            console.log(`WOL magic packet sent, response=${res}`);
+            console.info(`WOL magic packet sent, response=${res}`);
         });
     }
 
