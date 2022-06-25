@@ -9,7 +9,7 @@ Environment=NODE_PORT=3334
 Type=simple
 User=pi
 WorkingDirectory=/home/pi/wa/lan-monitor
-ExecStart=/home/pi/.nvm/versions/node/v16.15.1/bin/npm start
+ExecStart=/opt/node/bin/npm start
 Restart=on-failure
 StandardOutput=append:/tmp/lan-monitor.log
 StandardError=append:/tmp/lan-monitor.log
